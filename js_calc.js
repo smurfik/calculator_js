@@ -16,24 +16,14 @@ window.onload = function() {
     event.preventDefault();
     if (num == "1") {
       answer = n + m;
-      ans.value = answer;
-      firstNum.value = answer;
-      secondNum.value = "";
     } else if (num == "2") {
       answer = n - m;
-      ans.value = answer;
-      firstNum.value = answer;
-      secondNum.value = "";
     } else if (num == "3") {
       answer = n * m;
-      ans.value = answer;
-      firstNum.value = answer;
-      secondNum.value = "";
     } else {
       answer = n/m;
-      ans.value = answer;
-      firstNum.value = answer;
-      secondNum.value = "";
     };
+    ans.value = answer;
+    firstNum.value = answer;
   });
 };
