@@ -1,5 +1,5 @@
-var answer;
 var calc = function (n, num, m) {
+  var answer;
   if (num == "1") {
     answer = n + m;
   } else if (num == "2") {
@@ -14,13 +14,12 @@ var calc = function (n, num, m) {
 
 window.onload = function() {
 
-  var answer;
-  var ans = document.getElementById("answer");
-  var submit = document.getElementById("submit");
-  var firstNum = document.getElementById("first");
-  var secondNum = document.getElementById("second");
-  var operation = document.getElementById("sign");
-  var n, m, num;
+  var answer, n, m, num,
+      ans = document.getElementById("answer"),
+      submit = document.getElementById("submit"),
+      firstNum = document.getElementById("first"),
+      secondNum = document.getElementById("second"),
+      operation = document.getElementById("sign");
 
   submit.addEventListener('click', function (event) {
     n = parseInt(firstNum.value, 10);
