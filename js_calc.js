@@ -4,9 +4,9 @@ window.onload = function() {
   var ans = document.getElementById("answer");
 
   var submit = document.getElementById("submit");
+  var firstNum = document.getElementById("first");
 
-  submit.addEventListener('click', function (event){
-    var firstNum = document.getElementById("first");
+  submit.addEventListener('click', function (event) {
     var n = parseInt(firstNum.value, 10);
     var secondNum = document.getElementById("second");
     var m = parseInt(secondNum.value, 10);
@@ -25,5 +25,11 @@ window.onload = function() {
     };
     ans.value = answer;
     firstNum.value = answer;
+  });
+
+  var clear = document.getElementById("clear");
+
+  clear.addEventListener('click', function (event) {
+    firstNum.focus();
   });
 };
