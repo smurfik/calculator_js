@@ -4,29 +4,25 @@
     <meta charset="utf-8">
     <title>Tammy's Calc</title>
     <script src="/js_calc.js"></script>
+    <link rel="stylesheet" type="text/css" href="/bootstrap.css"/>
     <link rel="stylesheet" type="text/css" href="/js_calc.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <div id="calculator">
+    <div class="container">
       <form action="#">
-        <div class="container">
-          <input id="answer" value="0" class="ans"></input>
-          <input id="first" value="" class="first"></input>
-          <select id="sign" class="op">
-            <option value="1">+</option>
-            <option value="2">-</option>
-            <option value="3">*</option>
-            <option value="4">/</option>
-          </select>
-          <input id="second" value="" class="second"></input>
-        </div>
-        <div class="container">
-          <button id="submit" class="submit">Submit</button>
-        </div>
-        <div class="container">
-          <button id="clear" type="reset" class="clear">CE</button>
-        </div>
+        <input id="answer" value="0" class="col-sm-11 ans"></input>
+        <input id="first" value="" class="col-sm-5"></input>
+        <select id="sign" class="col-sm-1 sign">
+          <option value="1">+</option>
+          <option value="2">-</option>
+          <option value="3">*</option>
+          <option value="4">/</option>
+        </select>
+        <input id="second" value="" class="col-sm-5"></input>
+        <button id="submit" class="button col-sm-11">Submit</button>
+        <button id="clear" type="reset" class="button col-sm-11">CE</button>
       </form>
-    </div>
+      </div>
   </body>
 </html>
